@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <base href="https://htmlacademy-adaptive.github.io/544889-mishka-28/2/">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__product-choice">
+        <a class="product-choice__link" href="#">Каталог товаров</a>
+        <a class="product-choice__form" href="#">Вязание на заказ</a>
+      </div>
+      <a class="navigation__logo" href="#">Логотип "Мишка"</a>
+      <div class="navigation__user-block">
+        <a class="user-block__search" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+        <a class="user-block__cart" href="#">Корзина: пока пуста</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Мишка, предметы из пряжи ручной работы</h1>
+    <section class="main-idea">
+      <div class="useful-links">
+        <a class="useful-links__novelties" href="#">Новые поступления</a>
+        <a class="useful-links__sale" href="#">Распродажа</a>
+        <a class="useful-links__delivery" href="#">Бесплатная доставка по России</a>
+      </div>
+      <h2 class="main-idea__header">Милые штуки ручной работы для дома</h2>
+    </section>
+    <div class="product-types">
+      <article class="product-type">
+        <h4 class="product-type_header">Предметы интерьера</h4>
+      </article>
+      <article class="product-type">
+        <h4 class="product-type_header">Детские игрушки</h4>
+      </article>
+    </div>
+    <section class="fresh-product">
+      <h2 class="fresh-product__header">Вязаные корзинки</h2>
+      <h3 class="fresh-product__mark">Товар недели</h3>
+      <p class="fresh-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+        размерах.</p>
+      <!-- Выбор между сеточкой на grid-ах и классической таблицей -->
+      <div class="fresh-product__parameters">
+        <p class="fresh-product__parameter">Цвет:</p>
+        <p class="fresh-product__parameter">тиффани/серый</p>
+        <p class="fresh-product__parameter">Диаметр:</p>
+        <p class="fresh-product__parameter">25 см</p>
+        <p class="fresh-product__parameter">Высота:</p>
+        <p class="fresh-product__parameter">15 см</p>
+      </div>
+      <!-- <table class="fresh-product__parameters">
+        <tr>
+          <th>Цвет:</th>
+          <th>тиффани/серый</th>
+        </tr>
+        <tr>
+          <th>Диаметр:</th>
+          <th>25 см</th>
+        </tr>
+        <tr>
+          <th>Высота:</th>
+          <th>15 см</th>
+        </tr>
+      </table> -->
+      <b class="fresh-product__price">Цена: 990 руб.</b>
+      <a class="button fresh-product__button" href="#">Заказать</a>
+    </section>
+    <section class="about-craft">
+      <h2 class="about-craft__header">Коротко о нас:</h2>
+      <ul class="advantages">
+        <li class="advantage-item">
+          <p class="advantage-item__text">Экологически чистые материалы</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Поддержка отечественного производителя</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="advantage-item">
+          <p class="advantage-item__text">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+    </section>
+    <section class="review-slider">
+      <h2 class="review-slider__header">Отзывы</h2>
+      <a class="button review-slider_button" href="#">Написать</a>
+      <p class="review-slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+        лайков,
+        как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу
+        стали более стильными, а также набирают больше лайков!</p>
+      <div class="review-slider__author">
+        <p class="review-slider__author-name">Анастасия Красильникова</p>
+        <a class="review-slider__author-link" href="https://www.instagram.com/misssssiskras">@misssssiskras</a>
+      </div>
+      <a class="review-slider__left-button" href="#">
+        <span class="visually-hidden">Листать отзывы влево</span>
+      </a>
+      <a class="review-slider__rigth-button" href="#">
+        <span class="visually-hidden">Листать отзывы вправо</span>
+      </a>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__header">Контакты</h2>
+      <address class="contacts__block">
+        <p class="contacts__email-label">e-mail</p>
+        <a class="contacts_email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <p class="contacts__address-label">адрес</p>
+        <p class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
+      </address>
+      <a class="button contacts__button" href="#">Напишите нам</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__logo" href="#">Логотип "Мишка"</a>
+    <div class="footer__social">
+      <a class="footer__vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+      <a class="footer__youtube" href="#"><span class="visually-hidden">Ютьюб</span></a>
+      <a class="footer__telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
+    </div>
+    <a class="footer__developer" href="#">Разработано</a>
+  </footer>
+
+</body>
+
+</html>
