@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="/source/css/style.css">
 </head>
 
 <body>
 
   <header class="header">
     <nav class="navigation">
-      <a class="navigation__link navigation__link--main" href="#">Каталог товаров</a>
-      <a class="navigation__link" href="#">Вязание на заказ</a>
-      <a class="navigation__link navigation__link--logo" href="#">Логотип "Мишка"</a>
-      <a class="navigation__link navigation__link--icon" href="#">
-        <span class="visually-hidden">Поиск</span>
-      </a>
-      <a class="navigation__link navigation__link--icon" href="#">Корзина: пока пуста</a>
+      <button class="navigation__button" type="button" aria-label="Развернуть меню">===</button>
+      <a class="navigation__logo" href="#">Логотип "Мишка"</a>
+      <div class="navigation-menu">
+        <a class="navigation-menu_link navigation-menu__link--main" href="#">Каталог товаров</a>
+        <a class="navigation-menu_link" href="#">Вязание на заказ</a>
+        <a class="navigation-menu_link navigation-menu__link--icon" href="#" aria-label="Поиск">===</a>
+        <a class="navigation-menu__link navigation-menu__link--icon" href="#">Корзина: пока пуста</a>
+      </div>
     </nav>
   </header>
 
@@ -29,8 +31,7 @@
       <p class="main-idea__delivery">Бесплатная доставка по России</p>
       <h2 class="main-idea__header">Милые штуки ручной работы для дома</h2>
     </section>
-    <section class="product-type">
-      <h2 class="visually-hidden">Тип товара</h2>
+    <section class="product-type" aria-label="Тип товара">
       <a class="product-type__interior" href="#">Предметы интерьера</a>
       <a class="product-type__toys" href="#">Детские игрушки</a>
     </section>
@@ -90,12 +91,8 @@
         <p class="review-slider__author-name">Анастасия Красильникова</p>
         <a class="review-slider__author-link" href="https://www.instagram.com/misssssiskras">@misssssiskras</a>
       </div>
-      <a class="review-slider__left-button" href="#">
-        <span class="visually-hidden">Листать отзывы влево</span>
-      </a>
-      <a class="review-slider__rigth-button" href="#">
-        <span class="visually-hidden">Листать отзывы вправо</span>
-      </a>
+      <a class="review-slider__left-button" href="#" aria-label="Листать отзывы вправо">===</a>
+      <a class="review-slider__rigth-button" href="#" aria-label="Листать отзывы влево">===</a>
       <a class="button review-slider__button" href="#">Написать</a>
     </section>
     <section class="contacts">
@@ -113,9 +110,9 @@
   <footer class="footer">
     <a class="footer__logo" href="#">Логотип "Мишка"</a>
     <div class="social">
-      <a class="social__vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-      <a class="social__youtube" href="#"><span class="visually-hidden">Ютьюб</span></a>
-      <a class="social__telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
+      <a class="social__vk" href="#" aria-label="ВКонтакте">===</a>
+      <a class="social__youtube" href="#" aria-label="Ютьюб">===</a>
+      <a class="social__telegram" href="#" aria-label="Телеграм">===</a>
     </div>
     <a class="footer__developer" href="#">Разработано</a>
   </footer>

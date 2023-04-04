@@ -3,70 +3,99 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка, каталог</title>
+  <link rel="stylesheet" href="/source/css/style.css">
 </head>
 
 <body>
+  <div class="page-container">
 
-  <header class="header">
-    <nav class="navigation">
-      <a class="navigation__link navigation__link--main" href="#">Каталог товаров</a>
-      <a class="navigation__link" href="#">Вязание на заказ</a>
-      <a class="navigation__link navigation__link--logo" href="#">Логотип "Мишка"</a>
-      <a class="navigation__link navigation__link--icon" href="#">
-        <span class="visually-hidden">Поиск</span>
-      </a>
-      <a class="navigation__link navigation__link--icon" href="#">Корзина: пока пуста</a>
-    </nav>
-  </header>
+    <header class="header">
+      <nav class="navigation">
+        <button class="navigation__button" type="button" aria-label="Развернуть меню"></button>
+        <a class="navigation__logo" href="#" aria-label="Логотип Мишка"></a>
+        <ul class="navigation-menu">
+          <li class="navigation-menu__item"><a class="navigation-menu__link navigation-menu__link--main"
+              href="#">Каталог товаров</a>
+          </li>
+          <li class="navigation-menu__item"><a class="navigation-menu__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="navigation-menu__item"><a class="navigation-menu__link navigation-menu__link--search" href="#"
+              aria-label="Поиск">Поиск по сайту</a>
+          </li>
+          <li class="navigation-menu__item"><a class="navigation-menu__link navigation-menu__link--cart"
+              href="#">Корзина: пока пуста</a>
+          </li>
+          <p class="navigation-menu__text">Бесплатная доставка по России</p>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="catalog-items">
-      <h2 class="visually-hidden">Каталог</h2>
-      <article class="item-card">
-        <img class="item-card__image" src="#" alt="Зайчик-попрыгайчик">
-        <div class="item-card__description">
-          <h3 class="item-card__item-name">Зайчик-попрыгайчик</h3>
-          <p class="item-card__parametres">Рост 30 см, вес 200 г</p>
-          <b class="item-card__price">1 200 руб.</b>
-        </div>
-      </article>
-      <article class="item-card">
-        <img class="item-card__image" src="#" alt="Корзинка для белья">
-        <div class="item-card__description">
-          <h3 class="item-card__item-name">Корзинка для белья</h3>
-          <p class="item-card__parametres">Диаметр 15 см, высота 10 см</p>
-          <b class="item-card__price">690 руб.</b>
-        </div>
-      </article>
-      <article class="item-card">
-        <img class="item-card__image" src="#" alt="Большая корзинка для игрушек">
-        <div class="item-card__description">
-          <h3 class="item-card__item-name">Большая корзинка для игрушек</h3>
-          <p class="item-card__parametres">Диаметр 30 см, высота 30 см</p>
-          <b class="item-card__price">1 200 руб.</b>
-        </div>
-      </article>
-      <article class="production">
-        <h3 class="production__header">Процесс производства</h3>
-        <img class="production__image" src="#" alt="Процесс производства">
-        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.</p>
-        <a class="button production__button">Сделать заказ</a>
-      </article>
-    </section>
-  </main>
+    <main class="main-container">
+      <h1 class="catalog-header">Каталог товаров</h1>
+      <section class="catalog-items" aria-label="Каталог">
+        <article class="item-card">
+          <img class="item-card__image" src="/source/img/photo-rabbit.jpg" alt="Зайчик-попрыгайчик">
+          <div class="item-card__description">
+            <h3 class="item-card__item-name">Зайчик-попрыгайчик</h3>
+            <p class="item-card__parameters">Рост&nbsp;30&nbsp;см, вес&nbsp;200&nbsp;г</p>
+            <b class="item-card__price">1 200 руб.</b>
+            <a class="item-card__add-to-cart"></a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img class="item-card__image" src="/source/img/photo-underwear-basket.jpg" alt="Корзинка для белья">
+          <div class="item-card__description">
+            <h3 class="item-card__item-name">Корзинка для белья</h3>
+            <p class="item-card__parameters">Диаметр&nbsp;15&nbsp;см, высота&nbsp;10&nbsp;см</p>
+            <b class="item-card__price">690 руб.</b>
+            <a class="item-card__add-to-cart" href="#"></a>
+          </div>
+        </article>
+        <article class="item-card">
+          <img class="item-card__image" src="/source/img/photo-toy-basket.jpg" alt="Большая корзинка для игрушек">
+          <div class="item-card__description">
+            <h3 class="item-card__item-name">Большая корзинка для&nbsp;игрушек</h3>
+            <p class="item-card__parameters">Диаметр&nbsp;30&nbsp;см, высота&nbsp;30&nbsp;см</p>
+            <b class="item-card__price">1 200 руб.</b>
+            <a class="item-card__add-to-cart"></a>
+          </div>
+        </article>
+        <article class="production">
+          <h3 class="production__header">Процесс производства</h3>
+          <img class="production__image" src="/source/img/photo-basket.jpg" alt="Процесс производства">
+          <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+            том,
+            как появляются наши товары.</p>
+          <a class="button production__button">Сделать заказ</a>
+        </article>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <a class="footer__logo" href="#">Логотип "Мишка"</a>
-    <div class="social">
-      <a class="social__vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-      <a class="social__youtube" href="#"><span class="visually-hidden">Ютьюб</span></a>
-      <a class="social__telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
+    <footer class="footer">
+      <a class="footer__logo footer__logo--active" href="#">Логотип "Мишка"</a>
+      <article class="social" aria-label="Контакты в социальных сетях">
+        <a class="social__link social__link--vk" href="#" aria-label="ВКонтакте"></a>
+        <a class="social__link social__link--youtube" href="#" aria-label="Ютьюб"></a>
+        <a class="social__link social__link--telegram" href="#" aria-label="Телеграм"></a>
+      </article>
+        <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Логотип HTML-Academy"></a>
+    </footer>
+
+    <div class="modal-container modal-container--active">
+      <article class="modal-cart">
+        <h2 class="modal-cart__header">Добавить в корзину</h2>
+        <button class="modal-cart__product-size" type="button">S</button>
+        <button class="modal-cart__product-size" type="button">M</button>
+        <button class="modal-cart__product-size" type="button">L</button>
+        <a class="modal-cart__button">Добавить</a>
+      </article>
     </div>
-    <a class="footer__developer" href="#">Разработано</a>
-  </footer>
 
+  </div>
 </body>
 
 </html>
