@@ -18,6 +18,10 @@
   display: none;
 }
 
+/* ВЕРСИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ*/
+/* ВЕРСИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ*/
+/* ВЕРСИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ*/
+
 /* Основные правила размеров страницы*/
 body {
   margin: 0;
@@ -90,20 +94,11 @@ body {
     background-color: white;
   }
 
-  .navigation-menu {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-  }
-
   .navigation__logo {
     grid-column: 2 / -2;
     grid-row: 1 / 2;
     margin: 22px auto;
-    background-image: url("/source/img/logo-mobile.svg");
+    background-image: url("/source/img/logo-mishka-header-mobile.svg");
     background-repeat: no-repeat;
     width: 86px;
     height: 35px;
@@ -130,6 +125,15 @@ body {
     border: none;
     width: 21px;
     height: 20px;
+  }
+
+  .navigation-menu {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
   }
 
   .navigation-menu__item {
@@ -169,6 +173,10 @@ body {
     left: -43px;
     width: 21px;
     height: 18px;
+  }
+
+  .navigation-menu__sale {
+    display: none;
   }
 
   .navigation-menu__text {
@@ -281,7 +289,7 @@ body {
   }
 
   .production__description {
-    padding: 35px 0 34px 40px;
+    padding: 35px 34px 40px ;
     margin: 0;
     font-size: 13px;
     font-weight: 400;
@@ -327,6 +335,7 @@ body {
 
   .social__link {
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   .social__link--vk {
@@ -356,7 +365,7 @@ body {
     font-size: 19px;
     font-weight: 700;
     line-height: 18px;
-    padding-left: 29px;
+    padding-left: 39px;
   }
 
   .footer__developer-logo{
@@ -368,15 +377,152 @@ body {
     background-repeat: no-repeat;
     width: 27px;
     height: 34px;
-    padding-right: 29px;
+    padding-right: 39px;
   }
 
 }
 
+/* ВЕРСИЯ ДЛЯ ПЛАНШЕТОВ*/
+/* ВЕРСИЯ ДЛЯ ПЛАНШЕТОВ*/
+/* ВЕРСИЯ ДЛЯ ПЛАНШЕТОВ*/
+
 @media (min-width: 768px) and (max-width: 1200px) {
+
+  /* Навигация мобильной версии*/
+  .navigation {
+    display: block;
+    position: relative;
+    padding: 0 50px;
+  }
+
+  .navigation__logo {
+    display: block;
+    background-image: url("/source/img/logo-mishka-header-tablet.svg");
+    background-repeat: no-repeat;
+    width: 113px;
+    height: 46px;
+    margin: 22px 0;
+  }
+
   .navigation__button {
     display: none;
   }
+
+  .navigation-menu {
+    display: block;
+  }
+
+  .navigation-menu__link {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+  }
+
+  .navigation-menu__link--main {
+    position: absolute;
+    top: 150px;
+  }
+
+  .navigation-menu__link--search {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .navigation-menu__link--search::before {
+    content: "";
+    background-image: url("/source/img/icon-search.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: -43px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .navigation-menu__link--cart::before {
+    content: "";
+    background-image: url("/source/img/icon-cart.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: -43px;
+    width: 21px;
+    height: 18px;
+  }
+
+  .navigation-menu__sale {
+    display: none;
+  }
+
+  /* Подвал каталога*/
+  .footer {
+    display: grid;
+    grid-template-columns: 31% 31% 31% auto;
+    align-items: center;
+    padding: 51px 50px 58px;
+    background-color: #F1F1F1;
+  }
+
+  .footer__logo {
+    grid-column: 1 / 2;
+    justify-self: start;
+    display: block;
+    background-image: url("/source/img/logo-mishka-footer.svg");
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 34px;
+  }
+
+  .social {
+    grid-column: 2 / 3;
+    justify-self: center;
+    display: flex;
+    gap: 29px;
+  }
+
+  .social__link {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .social__link--vk {
+    background-image: url("/source/img/icon-vk-black.svg");
+    width: 28px;
+    height: 22px;
+  }
+
+  .social__link--youtube {
+    background-image: url("/source/img/icon-youtube-black.svg");
+    width: 28px;
+    height: 22px;
+  }
+
+  .social__link--telegram {
+    background-image: url("/source/img/icon-telegram-black.svg");
+    width: 28px;
+    height: 22px;
+  }
+
+  .footer__developer {
+    grid-column: 3 / 4;
+    justify-self: end;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .footer__developer-logo{
+    grid-column: 4 / 5;
+    justify-self: end;
+    display: block;
+    background-image: url("/source/img/icon-htmlacademy.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34px;
+  }
 }
 
-@media (min-width: 1200px) {}
+
